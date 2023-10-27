@@ -1,12 +1,12 @@
 NAME= polymorphism
 
-SRC= main.o Animal.o Dog.o Cat.o
+SRC= main.o Animal.o Dog.o Cat.o Brain.o
 SRC+= WrongAnimal.o WrongDog.o WrongCat.o
 
 CC= c++
 
 CPPFLAGS +=	-Wall -Werror -Wextra
-CPPFLAGS +=	-std=c++98
+# CPPFLAGS +=	-std=c++98
 
 all:$(NAME)
 
