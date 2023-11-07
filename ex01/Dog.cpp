@@ -35,6 +35,6 @@ void Dog::makeSound() const {
 }
 
 std::ostream & operator<<( std::ostream & o, Dog const & rhs) {
-	o << rhs.getType();
+	o << rhs.getType() << "adres this :: "<< &rhs << "adres brain :: " << rhs.getBrain();
 	return o;
 }

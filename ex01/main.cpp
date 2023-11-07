@@ -17,7 +17,8 @@ int main(void)
 	const Animal* meta = new Animal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	const Animal* j2 = new Dog();
+	const Dog* j22 = new Dog();
+	const Animal* j2 = j22;
 	const Animal* i2 = new Cat();
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
@@ -33,10 +34,16 @@ int main(void)
 	std::cout << i << " " << std::endl;
 	std::cout << j2 << " " << std::endl;
 	std::cout << i2 << " " << std::endl;
-	const Animal* jcopy = new Dog();
+	const Animal* jcopy = new Dog(*j22);
 	const Animal* icopy = new Cat();
+	std::cout << *jcopy << " " << std::endl;
+	std::cout << *icopy << " " << std::endl;
 	delete i;
 	delete j;
+	delete i2;
+	delete j2;
+	delete icopy;
+	delete jcopy;
 	delete meta;
 
 	// wrong test

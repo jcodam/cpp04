@@ -32,6 +32,10 @@ void Animal::makeSound() const {
 }
 
 std::ostream & operator<<( std::ostream & o, Animal const & rhs) {
-	o << rhs.getType();
+	o << rhs.getType() << " adres this :: "<< &rhs << " adres brain :: " << rhs.getBrain();
 	return o;
+}
+
+Brain * Animal::getBrain() const{
+	return (nullptr);
 }

@@ -17,6 +17,7 @@ public:
 	Cat & operator=( Cat const & rhs );
 	virtual void	makeSound() const;
 	Brain * getBrain() const;
+
 };
 
 std::ostream & operator<<( std::ostream & o, Cat const & rhs);
