@@ -3,7 +3,7 @@ all:
 
 f:
 	@$(MAKE) -C ex00 fclean --no-print-directory
-	@# @$(MAKE) -C ex01 fclean --no-print-directory
+	@$(MAKE) -C ex01 fclean --no-print-directory
 	@# @$(MAKE) -C ex02 fclean --no-print-directory
 	@# @$(MAKE) -C ex03 fclean --no-print-directory
 	
