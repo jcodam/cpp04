@@ -30,14 +30,6 @@ Dog & Dog::operator=( Dog const & rhs ) {
 	return (*this);
 }
 
-// Animal & Dog::operator=( Animal const & rhs ) {
-// 	if (rhs.getType() = "Dog")
-// 	{
-		
-// 	}
-	
-// }
-
 void Dog::makeSound() const {
 	std::cout << FG_LMAGENTA "WAFF!!" FG_DEFAULT << std::endl;
 }
