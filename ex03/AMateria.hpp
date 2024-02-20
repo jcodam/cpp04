@@ -10,6 +10,7 @@ protected:
 
 public:
 	AMateria(){};
+	virtual ~AMateria(){};
 	// [...]
 	std::string const & getType() const{return (this->_type);}; //Returns the materia type
 	virtual AMateria* clone() const = 0;

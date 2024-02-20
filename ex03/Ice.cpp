@@ -3,7 +3,7 @@
 
 Ice::Ice() {
 	this->_type = "ice";
-	std::cout << "ice" << std::endl;
+	std::cout << "make ice" << std::endl;
 }
 // Ice::Ice( /*arg*/ ) {
 // 	std::cout << "ice" << std::endl;
@@ -12,7 +12,7 @@ Ice::Ice() {
 // 	std::cout << "ice" << std::endl;
 // }
 Ice::~Ice() {
-	std::cout << "ice" << std::endl;
+	std::cout << "del ice" << std::endl;
 }
 
 AMateria* Ice::clone() const{

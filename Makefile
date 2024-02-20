@@ -35,6 +35,8 @@ f:
 	$(MAKE) -C ex02 fclean
 3:
 	$(MAKE) -C ex03
+3v:
+	$(MAKE) -C ex03 vgrind
 3r:
 	$(MAKE) -C ex03 r
 3re:

@@ -14,7 +14,15 @@ MateriaSource::MateriaSource() {
 // 	std::cout << "source" << std::endl;
 // }
 MateriaSource::~MateriaSource() {
-	std::cout << "source" << std::endl;
+	for (size_t i = 0; i < 4; i++)
+	{
+		if (this->_slots[i])
+		{
+			delete this->_slots[i];
+			this->_slots[i] = 0;
+		}
+	}
+	std::cout << "del source" << std::endl;
 }
 
 void MateriaSource::learnMateria(AMateria* m){
@@ -33,7 +41,7 @@ AMateria * MateriaSource::createMateria( std::string const & type){
 	{
 		if (this->_slots[i]->getType() == type)
 		{
-			return (this->_slots[i]);
+			return ((this->_slots[i]->clone())); //this->_slots[i]);
 		}
 	}
 	return 0;

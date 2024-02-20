@@ -3,7 +3,7 @@
 
 Cure::Cure() {
 	this->_type = "cure";
-	std::cout << "cure" << std::endl;
+	std::cout << "make cure" << std::endl;
 }
 // Cure::Cure( /*arg*/ ) {
 // 	std::cout << "cure" << std::endl;
@@ -12,7 +12,7 @@ Cure::Cure() {
 // 	std::cout << "cure" << std::endl;
 // }
 Cure::~Cure() {
-	std::cout << "cure" << std::endl;
+	std::cout << "del cure" << std::endl;
 }
 
 AMateria* Cure::clone() const{

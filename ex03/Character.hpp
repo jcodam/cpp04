@@ -8,6 +8,8 @@ class Character : public ICharacter
 private:
 	std::string _name;
 	AMateria	*_slots[4];
+	AMateria	**floor;
+	int			size_floor;
 
 public:
 	// Character();
