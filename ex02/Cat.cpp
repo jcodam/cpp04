@@ -24,7 +24,7 @@ Brain * Cat::getBrain() const{
 
 
 Cat & Cat::operator=( Cat const & rhs ) {
-	this->_brain = rhs.getBrain();
+	*this->_brain = *rhs.getBrain();
 	this->_type = rhs.getType();
 	return (*this);
 }

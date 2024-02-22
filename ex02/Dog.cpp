@@ -25,7 +25,7 @@ Brain * Dog::getBrain() const{
 
 
 Dog & Dog::operator=( Dog const & rhs ) {
-	this->_brain = rhs.getBrain();
+	*this->_brain = *rhs.getBrain();
 	this->_type = rhs.getType();
 	return (*this);
 }
